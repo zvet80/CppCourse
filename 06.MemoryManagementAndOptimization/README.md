@@ -1,7 +1,7 @@
 # Homework 6
 
 
-Brexit
+## Brexit
 
 Develop a software that is used for voting on the Britain Referendum for leaving the European union called “Brexit”.
 There are two types of users. Voters and result collectors.
