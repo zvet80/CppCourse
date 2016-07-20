@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{48512E2A-A481-4FBE-AAF3-2B847F426890}</ProjectGuid>
+    <ProjectGuid>{0D28DB16-3B90-4D30-84CC-F7908C8CFE1F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My06MemoryManagementAndOptimization</RootNamespace>
+    <RootNamespace>My07MultithreadingAndMultiprocessing</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,24 +145,17 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FilterItem.h" />
-    <ClInclude Include="Gender.h" />
-    <ClInclude Include="PrintType.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="VoteProcessor.h" />
-    <ClInclude Include="Voter.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Start.cpp" />
+    <ClCompile Include="07.MultithreadingAndMultiprocessing.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="VoteProcessor.cpp" />
-    <ClCompile Include="Voter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,33 +24,12 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Voter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="VoteProcessor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PrintType.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Gender.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FilterItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Voter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="VoteProcessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Start.cpp">
+    <ClCompile Include="07.MultithreadingAndMultiprocessing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

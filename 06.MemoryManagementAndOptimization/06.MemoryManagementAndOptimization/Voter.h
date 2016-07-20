@@ -15,6 +15,7 @@ class Voter
 	bool _vote;
 
 public:
+	Voter();
 	Voter(string name, unsigned int age, Gender gender, string city, string ethnos, bool vote);
 	string name() const;
 	unsigned int age() const;

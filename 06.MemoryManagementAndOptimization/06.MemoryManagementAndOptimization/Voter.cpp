@@ -2,6 +2,10 @@
 #include "Voter.h"
 
 
+Voter::Voter()
+{
+}
+
 Voter::Voter(string name, unsigned int age, Gender gender, string ethnos, string city, bool vote) :_name(name), _age(age), _gender(gender), _ethnos(ethnos), _city(city), _vote(vote)
 {
 }
@@ -42,13 +46,13 @@ Voter Voter::getInput()
 	string ethnos;
 	string city;
 	unsigned int age;
-	char gender;
+	int gender;
 	bool vote;
 	cout << "Enter your name: ";
 	cin >> name;
 	cout << "Enter your age: ";
 	cin >> age;
-	cout << "Enter your gender(M, F, U): ";
+	cout << "Enter your gender(Male = 1, Female = 2, Undefined=3): ";
 	cin >> gender;
 	cout << "Enter your ethnos: ";
 	cin >> ethnos;
