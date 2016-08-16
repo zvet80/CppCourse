@@ -1,30 +1,37 @@
-# Homework 7
+# Homework 8
 
-1. Write a program that calculates prime numbers and numbers of Fibunacci on different threads.
+1. Make a system for managing information for the motor vehicles in Bulgaria.
+The system shall have different containers for cars, trucks, motorcycles. The class describing a vehicle must have the following members :
+    Registration number (string)
+    Weight (float in tones)
+    Number of seats (short int)
+    Chassis number (string)
+    Engine number (string)
+    Owner (string)
+    Date of first registration (custom class Date) – when the car was firstly registered
+    Date of registration in country (custom class Date) – when the car was registered with its current registration
 
-  a. The first thread starts searching for prime number from 1, until killing of the program and when a prime number is found the program must present the time for finding this number.
-  
-  b. The second thread is calculating and printing numbers of Fibunacci from 1 until killing of the program. When a new number of Fibunacci is found the program prints this number and the time for calculating this number.
+And Functions:
+Getter for all of the information
 
-  c. The time is shown in ms (milliseconds)
-  
-  d. Think about strategies for not having overlapping messages from the console.
-  
-  e. The program must work with large as possible numbers. When the number is too large to be held in type like unsigned long long the program stops the calculation of that kind of numbers and shows error message.
+The system shall support multithread search for each container (you start searching for a vehicle with a registration number and the program initialize search in each container on a different thread).
 
-Example output:
+Lambda expressions shall be used in the software for the search (consider using for_each function).
+Lambda expressions shall be used in the software for displaying the information ( the function must look like : searchForACarWithRegistrationNumber(string registrationNumber, void aLambdaExpressionToBeExecutedWhenFound())
 
-Prime 1, 0.1 ms.
-Fibunacci 1, 0.1 ms.
-Prime 2, 0.1 ms.
-Fibunacci 2, 0.1 ms.
-Prime 3, 0.1 ms.
-Fibunacci 3, 0.1 ms.
-Fibunacci 5, 0.1 ms.
-Prime 5, 0.1 ms.
-Fibunacci 8, 0.1 ms.
-Prime 7, 0.1 ms.
-Fibunacci 13, 0.2 ms.
-Fibbunaci 21, 0.1 ms.
-Prime 11, 0.2 ms. 
+A simple example of using the software: (<< - Output, >> - Input)
+
+<<Please enter registration number of a vehicle to search
+>>A2273MM
+<<Searching
+<<A2273MM
+<<Weight: 1.0 t
+<<Number of seats: 5
+<<Chassis number: 123123123123123
+<<Engine number: D14A400192
+<<Owner: Martin Kuvandzhiev
+<<Date of first registration: 29.07.2000
+<<Date of registration in country: 14.03.2014
+
+
 
